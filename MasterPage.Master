@@ -1,0 +1,547 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="WebApplication7.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M2N4Q7R');</script>
+    <!-- End Google Tag Manager -->
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6E2MM5DZ9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H6E2MM5DZ9');
+    </script>
+    <!-- Google tag (gtag.js) -->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10888132180"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-10888132180'); </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/fvicon.webp" type="image/x-icon">
+    <link rel="icon" href="/assets/img/fvicon.webp" type="image/x-icon">
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700&display=swap" rel="stylesheet">
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+    <meta charset="UTF-8">
+    <link rel="alternate" hreflang="x-default" href="https://www.softcron.com">
+    <link rel="alternate" hreflang="en" href="https://www.softcron.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <meta name="language" content="English">
+    <meta name="owner" content="Softcron Services Pvt Ltd">
+    <meta name="author" content="Softcron Services Pvt Ltd">
+    <meta name="copyright" content="www.softcron.com">
+    <meta name="url" content="https://www.softcron.com">
+    <meta name="identifier-URL" content="https://www.softcron.com">
+    <meta name="directory" content="submission">
+    <meta name="classification" content="Business">
+    <meta name="SPIDERS" content="ALL">
+    <meta name="WEBCRAWLERS" content="ALL">
+    <meta name="audience" content="All">
+    <meta name="rating" content="General">
+    <meta name="robots" content="all, index, follow">
+    <meta name="search engines" content="Googlebot, Google, AOL, Yahoo, bing, Alexa, AltaVista, National Directory, SimpleSearch, WebCrawler, CNET">
+    <meta name="country" content="India">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="date" content="2015-04-20">
+    <meta name="search_date" content="2024-10-18">
+    <meta name="DC.title" content="Softcron">
+    <meta name="google-analytics" content="UA-67784003-1">
+    <meta name="subject" content="Softcron">
+    <meta name="copyright" content="Softcron">
+    <meta name="revised" content="Tuesday, October 18th, 2022, 9:15 AM">
+    <meta name="Classification" content="Business">
+    <meta name="designer" content="Pankaj Garg">
+    <meta name="copyright" content="Softcron">
+    <meta name="reply-to" content="info@softcron.com">
+    <meta name="category" content="Web Services, IT Services, Website Designing, Software Development, Web development, Bulk SMS, Bulk Whatsapp, Bulk Voice call broadcasting">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="revisit-after" content="7 days">
+    <meta itemprop="name" content="jQTouch">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="x-dns-prefetch-control" content="off">
+    <meta name="ResourceLoaderDynamicStyles">
+
+    <meta name="contact" content="info@softcron.com">
+    <meta name="googlebot" content="noodp">
+    <meta name="slurp" content="noydir">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+
+    <meta name="og:locale" content="en_US">
+    <meta name="og:type" content="website">
+    <meta name="og:site_name" content="Softcron">
+    <meta name="og:phone_number" content="+91-90448-92448">
+    <meta name="og:url" content="https://www.softcron.com">
+    <meta name="og:email" content="info@softcron.com">
+    <meta name="og:latitude" content="28.8955° N">
+    <meta name="og:longitude" content="76.6066° E">
+    <meta name="og:street-address" content="Sector 53, Gurugram, Haryana">
+    <meta name="og:locality" content="Gurugram">
+    <meta name="og:region" content="Haryana">
+    <meta name="og:postal-code" content="122002">
+    <meta name="og:country-name" content="India">
+    <meta name="fb:app_id" content="1264865923561052">
+    <meta name="fb:admins" content="100011828348978">
+
+    <meta property="og:title" content="Softcron - IT Consultancy Services | Web Development Company">
+    <meta property="og:url" content="https://www.softcron.com">
+    <meta property="og:image" content="https://www.softcron.com/assets/img/softcron-logo.webp">
+    <meta property="og:description" content="Softcron provides leading IT consultancy and web development services, including mobile app development and innovative website design for your business.">
+    <%--bhupender--%>
+
+
+    <meta name="DC.Title" content="Softcron - IT Consultancy Services | Web Development Company">
+    <meta name="DC.Subject" content="IT Services">
+    <meta name="DC.Description" content="Softcron provides leading IT consultancy and web development services, including mobile app development and innovative website design for your business.">
+    <meta name="DC.Contributor" content="Softcron">
+    <meta name="DC.Date" content="2015-05-10">
+    <meta name="DC.Type" content="Text">
+    <meta name="DC.Type" content="HTML">
+    <meta name="DC.Type" content="Images">
+    <meta name="DC.Language" content="en">
+    <meta name="DC.Language" content="en-US">
+    <meta name="DC.Language" content="en-UK">
+    <meta name="DC.Coverage" content="Global">
+    <meta name="language" content="en-us">
+    <meta name="doc-type" content="Webpage">
+    <script type='application/ld+json'>
+    {
+  "@context": "https://www.schema.org",
+  "@type": "Organization",
+  "name": "Softcron",
+  "url": "https://www.softcron.com",
+  "logo": "https://www.softcron.com/assets/img/softcron-logo.webp",
+  "image": "https://www.softcron.com/assets/img/og/OGHome.jpg",
+  "description": "Softcron provides leading IT consultancy and web development services, including mobile app development and innovative website design for your business.",
+  "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Orchid Centre, Sector 53",
+     "postOfficeBoxNumber": "Gurugram",
+     "addressLocality": "Gurugram",
+     "addressRegion": "Haryana",
+     "postalCode": "122002",
+     "addressCountry": "India"
+  },
+"aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "106",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+  "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": "28.433444864542817", 
+     "longitude": "77.10410108835639"
+  }
+        }
+    </script>
+
+</head>
+
+<body class="dia-home">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2N4Q7R"
+            height="0" width="0" class="iframeElement"></iframe>
+        <%--removed inline-CSS line--%>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="up">
+        <a href="#" id="scrollup" class="dia-scrollup text-center"><i class="fas fa-angle-up"></i></a>
+    </div>
+
+    <div class="it-up-footer-copyright pera-content d-lg-block ">
+        <div class="container">
+            <div class="row" id="emailid">
+                <div class="col-sm-4 d-none d-lg-block">
+                    <p>
+                        <span class="font-weight-bold">
+                            <a href="https://www.softcron.com">info@softcron.com  
+                            </a>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4  d-lg-block">
+                    <p class="txtcntr">
+                        <span class="font-weight-bold">
+                            <a href="tel:919044892448">+91-90448-92448
+                            </a>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4 d-none d-lg-block " id="socialicon">
+                    <p class="social">
+                        <a href="https://www.instagram.com/softcron_technology/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram s-icon-color footer-social pd10 " aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/softcron/" aria-label="Twitter" target="_blank"><i class="fab fa-twitter s-icon-color  footer-social pd10 " aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/softcron/" aria-label="Linkedin" target="_blank"><i class="fab fa-linkedin s-icon-color footer-social pd10 " aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/softcron" aria-label="Facebook" target="_blank"><i class="fab fa-facebook s-icon-color footer-social pd10 " aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start of header section
+        ============================================= -->
+    <header id="dia-header" class="dia-main-header">
+        <div class="container">
+            <div class="dia-main-header-content clearfix">
+
+                <div class="dia-logo float-left">
+                    <a href="<%=ResolveUrl("~/")%>">
+                        <img src="/assets/img/softcron-logo.webp" height="70" width="70" alt="Softcron Logo">
+                    </a>
+                </div>
+                <div class="dia-main-menu-item float-right">
+                    <nav class="dia-main-navigation  clearfix ul-li">
+                        <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+                            <li><a href="<%=ResolveUrl("~/")%>">Home</a></li>
+                            <li><a href="/about-us">About</a></li>
+                            <li class="dropdown">
+                                <a href="/services">Services</a>
+                                <div class="megamenu clearfix dropdown-menu">
+                                    <div class="row dotted">
+                                        <ul class="col-lg-4 col-md-4 col-xs-12">
+                                            <li class="title">Promotions</li>
+                                            <%--<li><a class="is-submenu" href="/missed-call-services"><i class="fa fa-angle-right"></i>Missed Call</a></li>--%>
+                                            <%--<li><a class="is-submenu" href="/bulk-whatsapp-services"><i class="fa fa-angle-right"></i>Bulk Whatsapp</a></li>--%>
+                                            <li><a class="is-submenu" href="/bulk-sms-services"><i class="fa fa-angle-right"></i>Bulk SMS</a></li>
+                                            <li><a class="is-submenu" href="/rcs-message"><i class="fa fa-angle-right"></i>RCS Messages</a></li>
+                                            <li><a class="is-submenu" href="/bulk-voice-call-services"><i class="fa fa-angle-right"></i>Voice Broadcasting</a></li>
+                                            <li><a class="is-submenu" href="/social-media-marketing-services"><i class="fa fa-angle-right"></i>Social Media Marketing</a></li>
+                                        </ul>
+                                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list ">
+                                            <li class="title">Marketing</li>
+                                            <li><a class="is-submenu" href="/search-engine-optimization"><i class="fa fa-angle-right"></i>SEO</a></li>
+                                            <li><a class="is-submenu" href="/ppc-google-adwords-services"><i class="fa fa-angle-right"></i>Pay Per Click</a></li>
+                                            <li><a class="is-submenu" href="/content-writing-services"><i class="fa fa-angle-right"></i>Content Writing</a></li>
+
+                                            <li><a class="is-submenu" href="/brand-marketing"><i class="fa fa-angle-right"></i>Brand Marketing</a></li>
+                                        </ul>
+                                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list ">
+                                            <li class="title">Solutions</li>
+                                            <li><a class="is-submenu" href="/qms"><i class="fa fa-angle-right"></i>QMS</a></li>
+                                            <li><a class="is-submenu" href="/erpSystem"><i class="fa fa-angle-right"></i>ERP System</a></li>
+                                            <li><a class="is-submenu" href="/crmSolution"><i class="fa fa-angle-right"></i>CRM Solution</a></li>
+                                            <li><a class="is-submenu" href="/hrmSolution"><i class="fa fa-angle-right"></i>HRM Software</a></li>
+                                            <%--<li><a class="is-submenu" href="/graphic-designing-services"><i class="fa fa-angle-right"></i>Graphic Designing</a></li>--%>
+                                            <%--<li><a class="is-submenu" href="/web-development"><i class="fa fa-angle-right"></i>Web development</a></li>--%>
+                                        </ul>
+                                    </div>
+                                    <div class="row notDotted">
+                                        <ul class="col-lg-4 col-md-4 col-xs-12">
+                                            <li class="title">Designing</li>
+                                            <%--<li><a class="is-submenu" href="/graphic-designing-services"><i class="fa fa-angle-right"></i>Graphic Designing</a></li>--%>
+                                            <li><a class="is-submenu" href="/website-designing"><i class="fa fa-angle-right"></i>Website Designing</a></li>
+                                            <li><a class="is-submenu" href="/web-development"><i class="fa fa-angle-right"></i>Web Development</a></li>
+                                            <li><a class="is-submenu" href="/cms-website-design"><i class="fa fa-angle-right"></i>CMS Website Design</a></li>
+                                            <li><a class="is-submenu" href="/e-commerce"><i class="fa fa-angle-right"></i>E-Commerce Solution</a></li>
+
+                                        </ul>
+
+                                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list ">
+                                            <li class="title">Development</li>
+                                            <%--<li><a class="is-submenu" href="/graphic-designing-services"><i class="fa fa-angle-right"></i>Graphic Designing</a></li>--%>
+                                            <%--<li><a class="is-submenu" href="/web-development"><i class="fa fa-angle-right"></i>Web development</a></li>--%>
+                                            <li><a class="is-submenu" href="/business-automation"><i class="fa fa-angle-right"></i>Business Automation</a></li>
+                                            <li><a class="is-submenu" href="/software-development"><i class="fa fa-angle-right"></i>Software Development</a></li>
+                                            <li><a class="is-submenu" href="/mobile-app-development-services"><i class="fa fa-angle-right"></i>Mobile App Development</a></li>
+                                            <li><a class="is-submenu" href="/hybrid-app-development"><i class="fa fa-angle-right"></i>Hybrid App Development</a></li>
+                                        </ul>
+
+                                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list ">
+                                            <li class="title">Integrations</li>
+                                            <%--<li><a class="is-submenu" href="/graphic-designing-services"><i class="fa fa-angle-right"></i>Graphic Designing</a></li>--%>
+                                            <%--<li><a class="is-submenu" href="/web-development"><i class="fa fa-angle-right"></i>Web development</a></li>--%>
+                                            <li><a class="is-submenu" href="/3rdPartyAPI"><i class="fa fa-angle-right"></i>3rd Party API</a></li>
+                                            <li><a class="is-submenu" href="/api-integrations"><i class="fa fa-angle-right"></i>API Integrations</a></li>
+                                            <li><a class="is-submenu" href="/payment-gateway"><i class="fa fa-angle-right"></i>Payment Gateway</a></li>
+                                            <li><a class="is-submenu" href="/wpOfficalAPI"><i class="fa fa-angle-right"></i>Whatsapp Official API</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="/blogs">Blogs</a></li>
+                            <li><a href="/checkout">Payment</a></li>
+                            <li><a href="/contact-us">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+
+            </div>
+            <!-- /desktop menu -->
+            <div class="dia-mobile_menu relative-position">
+                <div class="dia-mobile_menu_button dia-open_mobile_menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="dia-mobile_menu_wrap">
+                    <div class="mobile_menu_overlay dia-open_mobile_menu"></div>
+                    <div class="dia-mobile_menu_content">
+                        <div class="dia-mobile_menu_close dia-open_mobile_menu">
+                            <i class="far fa-times-circle"></i>
+                        </div>
+                        <div class="m-brand-logo text-center">
+                            <a href="<%=ResolveUrl("~/")%>">
+                                <img src="/assets/img/softcron-logo.webp" alt="Softcron Logo" height="40" width="134"></a>
+                        </div>
+                        <nav class="dia-mobile-main-navigation  clearfix ul-li">
+                            <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+                                <li><a href="<%=ResolveUrl("~/")%>">Home</a></li>
+                                <li><a href="/about-us">About</a></li>
+                                <li class="dropdown"><a href="/services">Services</a>
+
+                                    <ul class="dropdown-menu clearfix">
+                                        <li>
+                                            <p class="title"><strong>Promotion</strong></p>
+                                        </li>
+
+                                        <li><a class="is-submenu" href="/bulk-sms-services"><i class="fa fa-angle-right"></i>Bulk SMS</a></li>
+                                        <li><a class="is-submenu" href="/rcs-message"><i class="fa fa-angle-right"></i>RCS Messages</a></li>
+                                        <li><a class="is-submenu" href="/bulk-voice-call-services"><i class="fa fa-angle-right"></i>Voice Broadcasting</a></li>
+                                        <li><a class="is-submenu" href="/social-media-marketing-services"><i class="fa fa-angle-right"></i>Social Media Marketing</a></li>
+                                        <li>
+                                            <p class="title"><strong>Marketing</strong></p>
+                                        </li>
+                                        <li><a class="is-submenu" href="/search-engine-optimization"><i class="fa fa-angle-right"></i>SEO</a></li>
+                                        <li><a class="is-submenu" href="/ppc-google-adwords-services"><i class="fa fa-angle-right"></i>Pay Per Click</a></li>
+                                        <li><a class="is-submenu" href="/content-writing-services"><i class="fa fa-angle-right"></i>Content Writing</a></li>
+                                        <li><a class="is-submenu" href="/brand-marketing"><i class="fa fa-angle-right"></i>Brand Marketing</a></li>
+
+                                        <li>
+                                            <p class="title"><strong>Solution</strong></p>
+                                        </li>
+                                        <li><a class="is-submenu" href="/erpSystem"><i class="fa fa-angle-right"></i>ERP System</a></li>
+                                        <li><a class="is-submenu" href="/crmSolution"><i class="fa fa-angle-right"></i>CRM Solution</a></li>
+                                        <li><a class="is-submenu" href="/hrmSolution"><i class="fa fa-angle-right"></i>HRM Software</a></li>
+                                        <li><a class="is-submenu" href="/qms"><i class="fa fa-angle-right"></i>QMS</a></li>
+
+                                        <li>
+                                            <p class="title"><strong>Designing</strong></p>
+                                        </li>
+                                        <li><a class="is-submenu" href="/website-designing"><i class="fa fa-angle-right"></i>Website Designing</a></li>
+                                        <li><a class="is-submenu" href="/web-development"><i class="fa fa-angle-right"></i>Web Development</a></li>
+                                        <li><a class="is-submenu" href="/cms-website-design"><i class="fa fa-angle-right"></i>CMS Website Design</a></li>
+                                        <li><a class="is-submenu" href="/e-commerce"><i class="fa fa-angle-right"></i>E-Commerce Solution</a></li>
+
+                                        <li>
+                                            <p class="title"><strong>Development</strong></p>
+                                        </li>
+                                        <li><a class="is-submenu" href="/business-automation"><i class="fa fa-angle-right"></i>Business Automation</a></li>
+                                        <li><a class="is-submenu" href="/software-development"><i class="fa fa-angle-right"></i>Software Development</a></li>
+                                        <li><a class="is-submenu" href="/mobile-app-development-services"><i class="fa fa-angle-right"></i>Mobile App Development</a></li>
+                                        <li><a class="is-submenu" href="/hybrid-app-development"><i class="fa fa-angle-right"></i>Hybrid App Development</a></li>
+
+                                        <li>
+                                            <p class="title"><strong>Integrations</strong></p>
+                                        </li>
+                                        <li><a class="is-submenu" href="/3rdPartyAPI"><i class="fa fa-angle-right"></i>3rd Party API</a></li>
+                                        <li><a class="is-submenu" href="/api-integrations"><i class="fa fa-angle-right"></i>API Integrations</a></li>
+                                        <li><a class="is-submenu" href="/payment-gateway"><i class="fa fa-angle-right"></i>Payment Gateway</a></li>
+                                        <li><a class="is-submenu" href="/wpOfficalAPI"><i class="fa fa-angle-right"></i>Whatsapp Official API</a></li>
+
+                                    </ul>
+                                </li>
+
+                                <li><a href="/blogs">Blog</a></li>
+                                <li><a href="/checkout">Payment</a></li>
+                                <li><a href="/contact-us">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- /mobile-menu -->
+            </div>
+        </div>
+    </header>
+    <!-- End of header section
+        ============================================= -->
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+
+
+    <!-- Instagram wall section start -->
+    <%-- <section class="dia-blog-section mt--10">
+        <div class="container">
+            <div class="dia-section-title text-left text-capitalize pera-content dia-headline my-4">
+                <span>Instagram</span>
+                <h2>Instagram Wall</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+
+                </div>
+            </div>
+        </div>
+    </section>--%>
+    <!-- Instagram wall section start -->
+
+    <section class="work-with">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center ">
+                    <div class="title title-center">
+                        <h2 class="title-text" data-text="CONTACT">LET'S WORK TOGETHER</h2>
+                        <p class="centered">Ready to get started? It's Free!</p>
+                        <a class="contact-now" href="/contact-us">Contact Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="it-up-footer" class="it-up-footer-section position-relative">
+        <footer class="footer footer-type-2">
+            <div class="container">
+                <div class="row  text-center">
+                    <div class="col-lg-4 mt-30">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <div>
+
+                            <p><a href="mailto:info@softcron.com">info@softcron.com</a></p>
+                            <p><a href="mailto:info@softcron.us">info@softcron.us</a></p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-30">
+                        <i class="fas fa-map-marker" aria-hidden="true"></i>
+                        <p>India</p>
+                        <p>United States</p>
+                    </div>
+                    <div class="col-lg-4 mt-30">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <div>
+
+                            <p><a href="tel:(+91)-9044892448">(+91) 90448-92448</a></p>
+                            <p><a href="tel:+1 (210) 538-1729">+1 (210) 538-1729</a></p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-dash dark-orange-gradient">
+                </div>
+                <div class="row txtcntr">
+                    <div class="col-lg-12">
+                        <h2 class="mt-0 x">Follow us</h2>
+                    </div>
+                    <div class="col-12 mt-30 mb-40">
+                        <ul class="footer-social">
+                            <li><a href="https://www.twitter.com/softcron" aria-label="Twitter" target="_blank"><i class="fab fa-twitter blue-gradient" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/softcron_technology/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram red-gradient" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/softcron/" aria-label="Linkedin" target="_blank"><i class="fab fa-linkedin green-gradient" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.facebook.com/softcron" aria-label="Facebook" target="_blank"><i class="fab fa-facebook blue-gradient" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <div class="it-up-footer-copyright pera-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            Designed by 
+                        <span class="font-weight-bold" id="designedby">
+                            <a href="https://www.softcron.com">Softcron
+                            </a>
+                        </span>
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <p class="footerst" id="tncsection">
+                            <a href="/privacy-policy">Privacy Policy</a>
+                            <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+                            <a href="/refund-policy">Refund Policy</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JS library -->
+    <asp:PlaceHolder runat="server">
+        <%: System.Web.Optimization.Scripts.Render("~/bundles/WebFormsJs") %>
+    </asp:PlaceHolder>
+
+    <div class="container-fluid  sticky-footer1 ">
+        <div class="row">
+            <div class="col-sm-12  sticky-footer1" id="title_message">
+                <div class="w-33 mt-15 text-center" id="whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=919044892448&forceIntent=true&load=loadInIOSExternalSafari&text=Hey%20Softcron" aria-label="Whatsapp" target="_blank">
+                        <div class="whatsappWidget1 widgetPosition-Center-Right1">
+                            <img src="/assets/img/whatsapp_popup.webp" height="60" width="60" alt="whatapp_api" class="whatsappIcon">
+                        </div>
+                    </a>
+                </div>
+                <div class="w-33 text-center mt-15" id="call">
+                    <a href="tel:(+91)-9044892448" data-onclick="">
+                        <div>
+                            <img src="/assets/img/call-button.webp" width="60" height="60" alt="Call-Button">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=919044892448&amp;forceIntent=true&amp;load=loadInIOSExternalSafari&amp;text=Hey%20Softcron" target="_blank">
+        <div class="whatsappWidget widgetPosition-Center-Right">
+            <img src="/assets/img/whatsapp_popup.webp" width="60" height="60" alt="whatapp_api" class="whatsappIcon">
+        </div>
+    </a>
+
+
+
+    <script>
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5cf22a4c267b2e5785306dcf/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+
+
+</body>
+</html>
